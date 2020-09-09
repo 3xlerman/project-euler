@@ -31,7 +31,7 @@ func main() {
 
 }
 
-func isPrime(num int) bool {
+func IsPrime(num int) bool {
 	if num <= 0 {
 		return false
 	} else {
