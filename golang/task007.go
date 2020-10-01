@@ -1,21 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"project-euler/golang/numbers"
+)
 
 func main() {
-	fmt.Println(getPrimeNumberByIndex(10001))
+	fmt.Println(numbers.GetPrimeNumberByIndex(10001))
 }
 
-func getPrimeNumberByIndex(n int) int {
-	i := 2
-	j := 0
-	for {
-		if IsPrime(i) {
-			j++
-			if j == n {
-				return i
-			}
-		}
-		i++
-	}
-}
+
